@@ -1,0 +1,58 @@
+body {
+    width: 100%;
+    margin: 20px auto;
+  }
+  #left {
+    float: left;
+    height: 1000px;
+    width: 500px;
+    background-color: rgb(255, 237, 215);
+  }
+  
+  #right {
+    float: left;
+    width: 280px;
+    height: 1000px;
+    background-color: rgb(33, 110, 197);
+  }
+  #left_title{
+    padding-top: 5mm;
+    padding-left: 50px;
+  }
+  #left_section{
+    padding-left: 50px;
+  }
+  #left_name {
+    font-size: 2cm;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  #left_subtitle {
+    font-size: 7mm;
+    font-family: "SimHei";
+    color: rgb(33, 110, 197);
+  }
+  #left_content {
+    padding-left: 50px;
+    font-size: 4mm;
+    font-family: "SimHei";
+    color: rgb(75, 74, 74);
+    padding-bottom: 2mm;
+  }
+  #left_picture {
+    padding-left: 50px;
+    padding-top: 10px;
+    padding-bottom: 5px;
+  }
+  #right_title {
+    padding: 20px;
+    font-size: 8mm;
+    font-family: "SimHei";
+    color: white;
+    text-align: center;
+  }
+  #right_content {
+    font-family: "SimHei";
+    text-align: center;
+    color: white;
+  }

@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>BizPage Bootstrap Template</title>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <meta content="" name="keywords">
+  <meta content="" name="description">
+
+  <!-- Favicons -->
+  <link href="/img/favicon.png" rel="icon">
+  <link href="/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i|Montserrat:300,400,500,700" rel="stylesheet">
+
+  <!-- Bootstrap CSS File -->
+  <link href="/lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Libraries CSS Files -->
+  <link href="/lib/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+  <link href="/lib/animate/animate.min.css" rel="stylesheet">
+  <link href="/lib/ionicons/css/ionicons.min.css" rel="stylesheet">
+  <link href="/lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+  <link href="/lib/lightbox/css/lightbox.min.css" rel="stylesheet">
+
+  <!-- Main Stylesheet File -->
+  <link href="/css/stylecard.css" rel="stylesheet">
+  <link rel="stylesheet" href="/css/style.css">
+
+</head>
+
+<body>
+
+  <main id="main">
+
+
+    <!-- header-start -->
+    <header>
+      <div class="header-area ">
+          <div id="sticky-header" class="main-header-area ">
+              <div class="container-fluid p-0">
+                  <div class="row align-items-center justify-content-between no-gutters">
+                      <div class="col-xl-2 col-lg-2">
+                          <div class="logo-img">
+                              <a href="../index.html">
+                                  <img src="/img/logo.png" alt="">
+                              </a>
+                          </div>
+                      </div>
+                      <div class="col-xl-8 col-lg-8">
+                          <div class="main-menu  d-none d-lg-block">
+                              <nav>
+                                  <ul id="navigation">
+                                      <li><a class="active" href="../index.html">home</a></li>
+                                      <li><a href="../Schedule.html">Schedule</a></li>
+                                      <li><a href="#">blog <i class="ti-angle-down"></i></a>
+                                          <ul class="submenu">
+                                              <li><a href="../blog.html">blog</a></li>
+                                              <li><a href="../single-blog.html">single-blog</a></li>
+                                          </ul>
+                                      </li>
+                                      <li><a href="#">pages <i class="ti-angle-down"></i></a>
+                                          <ul class="submenu">
+                                              <li><a href="../elements.html">elements</a></li>
+                                          </ul>
+                                      </li>
+                                      <li><a href="../Speakers.html">Speakers</a></li>
+                                      <li><a href="../Venue.html">Venue</a></li>
+                                      <li><a href="../contact.html">Contact</a></li>
+                                      <li><a href="#">dbdemo <i class="ti-angle-down"></i></a>
+                                          <ul class="submenu">
+                                              <li><a href="../detail.html">detail</a></li>
+                                              <li><a href="/myproject/midproject">my project</a></li>
+                                              <li><a href="/table/speakers">table</a></li>
+                                          </ul>
+                                      </li>
+                                  </ul>
+                              </nav>
+                          </div>
+                      </div>
+                      <div class="col-xl-2 col-lg-2 d-none d-lg-block">
+                          <div class="buy_ticket">
+                              <a href="#" class="boxed-btn-white">Buy Ticket</a>
+                          </div>
+                      </div>
+                      <div class="col-12">
+                          <div class="mobile_menu d-block d-lg-none"></div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </header>
+  <!-- header-end -->
+
+
+    <!-- slider_area_start -->
+    <div class="slider_area slider_bg_1">
+      <div class="slider_text">
+          <div class="container">
+              <div class="position_relv">
+                <h1 class="opcity_text d-none d-lg-block">Projects</h1>
+                  <div class="row">
+                      <div class="col-xl-8">
+                          <div class="title_text title_text2 ">
+                              <h3>My Project</h3>
+                              <a href="#" class="boxed-btn-white">407411387&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;黃薇</a>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+  <!-- slider_area_end -->
+
+
+    <!--==========================
+      Portfolio Section
+    ============================-->
+    <section id="portfolio"  class="section-bg" >
+      <div class="container">
+
+        <div class="row portfolio-container">
+          <% for(let i=0;i < data.length;i++){ %>
+            <div class="col-lg-4 col-md-6 portfolio-item filter-app wow fadeInUp">
+              <div class="portfolio-wrap">
+                <figure>
+                  <img src="/img/tku/<%= data[i].pic %>" class="img-fluid" alt="">
+                  <a href="/img/tku/<%= data[i].pic %>" data-lightbox="portfolio" data-title="App 1" class="link-preview" title="Preview"><i class="ion ion-eye"></i></a>
+                  <a href="#" class="link-details" title="More Details"><i class="ion ion-android-open"></i></a>
+                </figure>
+
+                <div class="portfolio-info">
+                  <h4><a href="/<%= data[i].link %>"><%= data[i].name %></a></h4>
+                </div>
+              </div>
+            </div>
+          <% } %>
+        </div>
+
+      </div>
+    </section><!-- #portfolio -->
+
+  </main>
+
+  <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
+
+  <!-- JavaScript Libraries -->
+  <script src="/lib/jquery/jquery.min.js"></script>
+  <script src="/lib/jquery/jquery-migrate.min.js"></script>
+  <script src="/lib/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="/lib/easing/easing.min.js"></script>
+  <script src="/lib/superfish/hoverIntent.js"></script>
+  <script src="/lib/superfish/superfish.min.js"></script>
+  <script src="/lib/wow/wow.min.js"></script>
+  <script src="/lib/waypoints/waypoints.min.js"></script>
+  <script src="/lib/counterup/counterup.min.js"></script>
+  <script src="/lib/owlcarousel/owl.carousel.min.js"></script>
+  <script src="/lib/isotope/isotope.pkgd.min.js"></script>
+  <script src="/lib/lightbox/js/lightbox.min.js"></script>
+  <script src="/lib/touchSwipe/jquery.touchSwipe.min.js"></script>
+  <!-- Contact Form JavaScript File -->
+  <script src="/contactform/contactform.js"></script>
+
+  <!-- Template Main Javascript File -->
+  <script src="/js/maincard.js"></script>
+
+  <script src="/js/main.js"></script>
+
+</body>
+</html>
